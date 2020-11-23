@@ -96,7 +96,7 @@ class Watcher {
 
     // 将当前watcher实例指定到Dep静态属性target
     Dep.target = this;
-    this.vm[this.key]; // 触发getter，添加依赖
+    this.vm[this.key]; // 触发getter，添加依赖.
     Dep.target = null;
   }
 
